@@ -69,6 +69,11 @@ typeof(vektor_chr)
 
 ```
 
+fehlenden Vektor mit dem namen vektor_datetime hinzufügen (über das Format mach ich mir mal keine Gedanken)
+```{r}
+vektor_datetime <- c("2001-01-12", "2002-07-17", "2008-09-19")
+```
+
 # Typumwandlung
 
 Explizite Typumwandlung:
