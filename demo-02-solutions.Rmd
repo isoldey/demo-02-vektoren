@@ -74,6 +74,12 @@ fehlenden Vektor mit dem namen vektor_datetime hinzufügen (über das Format mac
 vektor_datetime <- c("2001-01-12", "2002-07-17", "2008-09-19")
 ```
 
+```{r}
+vektor_chr <- c("Apfel", "Birne", "Banane")
+vektor_lgl <- c(TRUE, FALSE, NA)
+vektor_num <- c(1, 5, 3)
+```
+
 # Typumwandlung
 
 Explizite Typumwandlung:
@@ -87,7 +93,14 @@ Explizite Typumwandlung:
 
 as.numeric(vektor_lgl)
 as.character(vektor_lgl)
-as.integer(3.5)
+
+sum(vektor_lgl, na.rm = TRUE)
+
+sum(as.character(vektor_lgl))
+
+as.integer(3.5) # schneidet Nachkommastellen ab, aber rundet nicht!
+round(3.5) # das rundet, hier auf 4
+
 
 ```
 
